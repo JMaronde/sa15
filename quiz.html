@@ -3,11 +3,58 @@
   <head>
     <title>Educational Quiz</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="quiz.css" />
   </head>
 
-  <body>
-  </body>
+  <header>
+    <h1>Quiz Time!</h1>
+    <h2>Welcome! Try your best with these 5 questions! Good Luck!</h2>
+  </header>
+
+  <section>
+    <form id="quizForm">
+        <div id="container">
+            <div class="input-control">
+                <label for="q1">1: Fill in the blank, this class is CS3: Introduction to ________</label>
+                <input type="text" id="q1" name="question1">
+                <div class="error"></div><br>
+            </div>
+
+            <div class="input-control">
+                <label for="q2">2: What muscle do bicep curls primarily work?</label>
+                <input type="text" id="q2" name="question2">
+                <div class="error"></div><br>
+            </div>
+
+            <div class="input-control">
+                <label for="q3">3: Who was the 1st president of the United States?</label>
+                <input type="text" id="q3" name="question3">
+                <div class="error"></div><br>
+            </div>
+
+            <div class="input-control">
+                <label for="q4">4: What question number are you currently on?</label>
+                <input type="text" id="q4" name="question4">
+                <div class="error"></div><br>
+            </div>
+
+            <div class="input-control">
+                <label for="q5">5: Who is this character?</label>
+                <img src="images/spongebob.webp" width="100px" height="100px" alt="Spongebob">
+                <input type="text" id="q5" name="question5">
+                <div class="error"></div><br>
+            </div>
+
+            <button type="submit">Submit Answers</button>
+        </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>Want to contact me? Email me at supercoolemail@gmail.com or Text me at 901-123-4567!</p>
+    <small>&copy; Copyright 2024, Epic Quizzes Studios</small>
+  </footer>
 
   <script src="quiz.js"></script>
 </html>
