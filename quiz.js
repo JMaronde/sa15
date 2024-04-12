@@ -1,4 +1,4 @@
-const form = document.getElementById('form');
+const form = document.getElementById('quizForm');
 
 const answers  = [];
 for (let i = 1; i <= 5; i++) { // looping to get each of the 5 answers
@@ -18,7 +18,7 @@ const setIncorrect = (element, message) => { // if they got the question wrong
     incorrectDisplay.innerText = message; // displays a message if the wrong answer was put
     inputControl.classList.add('incorect');
     inputControl.classList.remove('correct')
-}
+};
 
 const setCorrect = element => { // if they got the question right
     const inputControl = element.parentElement;
